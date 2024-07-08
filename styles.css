@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00cccc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #009999;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    transition: background 0.3s ease;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background: rgba(0, 255, 0, 0.2);
+}
+
+li .task-text {
+    flex: 1;
+}
+
+li .task-date {
+    margin-left: 10px;
+    color: #00cccc;
+}
+
+li button {
+    background: none;
+    border: none;
+    color: #ff0066;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: #ff3399;
+}
